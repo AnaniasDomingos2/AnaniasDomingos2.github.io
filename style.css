@@ -1,0 +1,210 @@
+
+body {
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #b1b1b1;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+h4.project-name {
+    font-family: 'Fira Code', monospace;
+}
+
+header h1 {
+    font-family: 'Fira Code', monospace;
+    margin: 0;
+    font-size: 24px;
+    white-space: nowrap;
+    border-right: .15em solid white;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 4s steps(40, end) forwards, blink-caret .75s step-end infinite;
+}
+
+h2,
+h5 {
+    padding: 5px 0;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-item {
+    flex: 1 1 calc(25% - 20px);
+    background-color: #f0f0f0;
+    color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+.skill-item img {
+    width: 50px;
+
+}
+
+@media (max-width: 600px) {
+    .skill-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    nav a {
+        padding: 15px 15px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: white
+    }
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #343a40;
+    position: sticky;
+    top: 0;
+}
+
+nav a:hover {
+    font-weight: 700;
+}
+
+section {
+    padding: 20px;
+}
+
+.about,
+.projects,
+.skills,
+.education,
+.contact {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about-content img {
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.about-content p {
+    flex: 1;
+}
+
+.portfolio img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.project-name span.title {
+    color: rgba(41, 63, 118, 0.845);
+}
+
+.project-name {
+    font-size: 1.5rem;
+    padding: 10px 15px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+}
+
+.contact-form button {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #b1b1b1;
+    color: white;
+    cursor: pointer;
+}
+
+.carousel {
+    border: 2px solid #343a40;
+    border-radius: 10px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: #b1b1b1;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.contact-form button:hover {
+    background-color: #817979;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #343a40;
+    color: white;
+}
+
+.social-links a {
+    color: #698fa2;
+    text-decoration: none;
+    margin: 0 10px;
+}
